@@ -1,5 +1,7 @@
 # Team Board Demo
 
+[![CI](https://github.com/BozXue/team-board-demo/actions/workflows/ci.yml/badge.svg)](https://github.com/BozXue/team-board-demo/actions/workflows/ci.yml)
+
 这是一个用于练习 **Cursor + Codex + GitHub** 协作的虚拟项目。它提供一个很小的命令行任务板：可以添加、查看和完成任务。项目只使用 Python 标准库，便于把注意力放在 Git 工作流上。
 
 ## 快速开始
@@ -25,6 +27,17 @@ PYTHONPATH=src python3 -m team_board list
 ```
 
 本地任务保存在 `data/tasks.json`；该文件已被 Git 忽略，不会进入共享仓库。
+
+## 示例运行
+
+```console
+$ team-board add "练习创建 Pull Request"
+Added #1: 练习创建 Pull Request
+$ team-board list
+[ ] #1 练习创建 Pull Request
+$ team-board done 1
+Completed #1: 练习创建 Pull Request
+```
 
 ## 仓库结构
 
