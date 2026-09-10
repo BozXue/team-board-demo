@@ -1,0 +1,26 @@
+name: 功能建议
+description: 提议一个可独立开发的小功能
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 要解决的问题
+      description: 当前有什么困难？
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: 期望结果
+      description: 完成后应有什么可观察的行为？
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 验收标准
+      description: 请列出可验证的完成条件。
+    validations:
+      required: true

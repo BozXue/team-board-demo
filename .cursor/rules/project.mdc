@@ -1,0 +1,15 @@
+---
+description: Shared repository rules for Cursor
+alwaysApply: true
+---
+
+# Project rules
+
+- Read `README.md` and `CONTRIBUTING.md` before editing.
+- Create a short-lived branch named `cursor/<topic>`; never commit directly to `main`.
+- Keep changes small and focused, and do not alter unrelated code.
+- Add or update tests for behavior changes.
+- Run `make check` before committing or opening a pull request.
+- Use Conventional Commits, such as `fix: handle an unknown task id`.
+- Do not commit secrets, `.venv`, or `data/tasks.json`.
+- Put business logic in `src/team_board/board.py` and CLI concerns in `src/team_board/cli.py`.
