@@ -1,0 +1,51 @@
+# 密钥和本机配置（保留 .env.example 作为模板）
+.env
+.env.*
+!.env.example
+!.env*.example
+
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# 前端依赖和构建产物
+node_modules/
+dist/
+dist-ssr/
+.vite/
+*.local
+
+# 运行期数据：数据库、项目图片、缓存、模型权重
+data/
+*.db
+*.sqlite3
+*.pt
+*.pth
+*.onnx
+*.ckpt
+*.h5
+*.pkl
+
+# 本地临时/实验目录
+.sam-port-staging/
+*.log
+logs/
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo

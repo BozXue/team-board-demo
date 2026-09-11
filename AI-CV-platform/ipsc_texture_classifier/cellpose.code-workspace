@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "../../miniconda3/envs/cellpose/lib/python3.10/site-packages/cellpose"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {}
+}

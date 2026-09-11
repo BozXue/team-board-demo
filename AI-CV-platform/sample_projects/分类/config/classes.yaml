@@ -1,0 +1,62 @@
+# 密封袋谷物视觉分类：先种类，再类型。
+# 视觉做不到的项目（水分、容重）不要放进类别标签。
+
+species:
+  - id: corn
+    name: 玉米
+    aliases: [corn, maize]
+    subtypes: [黄玉米, 白玉米, 混合玉米]
+    clip_prompts:
+      - a close-up of yellow dent corn kernels filling a clear plastic bag
+      - large yellow maize kernels, flat and wedge-shaped, in a sealed transparent bag
+      - 透明密封袋中的玉米籽粒，颗粒大，黄色，扁圆形
+
+  - id: paddy
+    name: 稻谷
+    aliases: [rice, paddy]
+    subtypes: [籼稻, 粳稻, 糯稻]
+    clip_prompts:
+      - unhusked paddy rice with golden husks in a transparent plastic bag
+      - slender rice grains still in hull, straw-gold color, packed in a clear bag
+      - 透明密封袋中的带壳稻谷，细长金黄色，有颖壳
+
+  - id: wheat
+    name: 小麦
+    aliases: [wheat]
+    subtypes: [白麦, 红麦]
+    clip_prompts:
+      - wheat kernels, oval brown grains with a ventral crease, in a clear plastic bag
+      - plump wheat berries without husk, amber-brown, in a sealed bag
+      - 透明密封袋中的小麦籽粒，卵圆形，黄褐色，有腹沟，不带壳
+
+  - id: barley
+    name: 大麦
+    aliases: [barley]
+    subtypes: [皮大麦, 裸大麦]
+    clip_prompts:
+      - barley grains with husk, flatter and more pointed than wheat, in a clear bag
+      - 透明密封袋中的大麦，比小麦更扁，多带颖壳
+
+  - id: sorghum
+    name: 高粱
+    aliases: [sorghum]
+    subtypes: [红高粱, 白高粱]
+    clip_prompts:
+      - small round sorghum grains, often reddish, in a transparent plastic bag
+      - 透明密封袋中的高粱，小圆粒，多为红色或褐色
+
+  - id: soybean
+    name: 大豆
+    aliases: [soybean, soy, soya]
+    subtypes: [黄豆, 黑豆, 青豆]
+    clip_prompts:
+      - round soybeans with a visible hilum in a transparent plastic bag
+      - 透明密封袋中的大豆，圆形，种脐明显
+
+  - id: millet
+    name: 谷子
+    aliases: [millet]
+    subtypes: [谷子]
+    clip_prompts:
+      - tiny millet grains like fine sand filling a transparent plastic bag
+      - 透明密封袋中的谷子，颗粒极小，像细沙

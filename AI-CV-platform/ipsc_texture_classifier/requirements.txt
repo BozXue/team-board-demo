@@ -1,0 +1,11 @@
+# Requires Python 3.10+. Versions are the ones the pipeline was validated on
+# (see 测试验证报告.md).
+numpy==2.2.6
+scipy==1.15.3
+scikit-image==0.25.2
+matplotlib==3.10.9
+tifffile==2025.5.10
+
+# Only needed by the seven-class texture classifier, not by colony_center.py.
+scikit-learn==1.7.2
+joblib==1.5.3

@@ -1,0 +1,15 @@
+name: ipsc
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy=2.2.6
+  - scipy=1.15.3
+  - scikit-image=0.25.2
+  # matplotlib-base skips the Qt/Tk GUI stack; the scripts render with the
+  # Agg backend and only write files, so the GUI build is dead weight.
+  - matplotlib-base=3.10.9
+  - tifffile=2025.5.10
+  # Only needed by the seven-class texture classifier, not by colony_center.py.
+  - scikit-learn=1.7.2
+  - joblib=1.5.3

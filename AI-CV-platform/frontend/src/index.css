@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-app text-ink antialiased;
+    font-family: system-ui, -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei",
+      "Noto Sans SC", sans-serif;
+    overflow: hidden;
+  }
+
+  ::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-panel-3;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2f3d54;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  input[type="range"] {
+    @apply h-1 w-full appearance-none rounded-full bg-panel-3;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    @apply h-3.5 w-3.5 appearance-none rounded-full bg-brand;
+    box-shadow: 0 0 0 3px rgb(56 189 248 / 0.18);
+  }
+}
+
+@layer components {
+  .panel {
+    @apply rounded-lg border border-line bg-panel;
+  }
+
+  .field {
+    @apply w-full rounded-md border border-line-solid bg-panel-2 px-2.5 py-1.5 text-[13px]
+      text-ink outline-none transition placeholder:text-mute/60
+      focus:border-brand/70 focus:ring-2 focus:ring-brand/15;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-1.5 rounded-md px-3 py-1.5 text-[13px]
+      font-medium transition disabled:cursor-not-allowed disabled:opacity-45;
+  }
+
+  .btn-primary {
+    @apply btn bg-brand-dim text-white hover:bg-brand;
+  }
+
+  .btn-ghost {
+    @apply btn border border-line-solid bg-panel-2 text-ink hover:border-brand/50 hover:bg-panel-3;
+  }
+
+  .btn-subtle {
+    @apply btn text-mute hover:bg-panel-2 hover:text-ink;
+  }
+
+  .btn-danger {
+    @apply btn border border-ng/40 bg-ng/10 text-ng hover:bg-ng/20;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11px] font-medium;
+  }
+
+  .label-text {
+    @apply text-[11px] font-medium uppercase tracking-wide text-mute;
+  }
+
+  .mono {
+    font-family: theme("fontFamily.mono");
+    font-variant-numeric: tabular-nums;
+  }
+
+  .scroll-y {
+    @apply min-h-0 overflow-y-auto;
+  }
+}
+
+/* React Flow theming */
+.react-flow__background {
+  background: #0a0e15;
+}
+
+.react-flow__edge-path {
+  stroke: #3d5273;
+  stroke-width: 1.6;
+}
+
+.react-flow__edge.selected .react-flow__edge-path,
+.react-flow__edge:hover .react-flow__edge-path {
+  stroke: #38bdf8;
+}
+
+.react-flow__handle {
+  width: 9px;
+  height: 9px;
+  border: 1.5px solid #0a0e15;
+  background: #4b6285;
+}
+
+.react-flow__handle:hover {
+  background: #38bdf8;
+}
+
+.react-flow__attribution {
+  display: none;
+}
+
+.react-flow__controls-button {
+  background: #16202e;
+  border-bottom: 1px solid #243146;
+  fill: #8ba0bb;
+}
+
+.react-flow__controls-button:hover {
+  background: #1d2837;
+}
+
+.react-flow__minimap {
+  background: #111823;
+  border-radius: 8px;
+  border: 1px solid #243146;
+}
